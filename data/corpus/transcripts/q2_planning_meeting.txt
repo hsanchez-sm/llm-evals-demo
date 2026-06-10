@@ -1,0 +1,42 @@
+MEETING TRANSCRIPT — EvalsInc Q2 Product Planning
+Date: April 3 (synthetic)
+Attendees: Priya (PM), Marcus (Eng Lead), Sofia (Design), Ken (Support Lead)
+
+Priya: Thanks everyone. Goal today is to lock the Q2 roadmap. Three
+candidates on the table: the public REST API, the Slack integration,
+and the dashboard redesign. We can realistically ship two.
+
+Marcus: Engineering-wise, the REST API is the heaviest — about six
+weeks with two engineers. The Slack integration is maybe two weeks
+because we reuse the OAuth work from last quarter.
+
+Sofia: The dashboard redesign needs design lead time. If we want it
+in Q2, I need sign-off on the mockups by next Friday.
+
+Ken: From support, the API is the top customer request by far. We
+get tickets weekly asking for programmatic access. Slack is nice-to-
+have. The dashboard complaints are mostly about load speed, not
+looks.
+
+Priya: That reframes it. If load speed is the real dashboard pain,
+maybe a performance pass beats a full redesign.
+
+Marcus: Agreed. A performance pass is about one week, not six.
+
+Priya: Okay, decision: we ship the public REST API and a dashboard
+performance pass this quarter. Slack integration moves to the Q3
+backlog. The full redesign is parked until we have usage data.
+
+Sofia: Works for me. I'll repurpose the redesign research for Q3.
+
+Priya: Action items. Marcus, scope the REST API and the perf pass by
+Monday. Ken, draft API docs from the top ten support tickets. Sofia,
+write up the redesign findings for the Q3 brief. I'll update the
+roadmap and tell sales the API lands this quarter.
+
+Ken: One risk — if the API ships without rate limiting, we'll get
+abuse. Let's make 429 handling part of the v1 scope, not a follow-up.
+
+Marcus: Good call. I'll include rate limiting in the scope.
+
+Priya: Perfect. That's a wrap.

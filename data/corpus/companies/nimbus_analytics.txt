@@ -1,0 +1,21 @@
+COMPANY PROFILE — Nimbus Analytics
+===================================
+
+Company name:   Nimbus Analytics, Inc.
+Website:        https://www.nimbusanalytics.io
+Industry:       Data Analytics SaaS
+Headquarters:   Austin, Texas, USA
+Founded:        2016
+Employees:      240
+Annual revenue: USD 48 million (FY2024)
+
+About:
+Nimbus Analytics is a cloud platform that turns raw business
+data into real-time dashboards. Its flagship product, NimbusBoard,
+lets non-technical teams build live metrics views without writing
+SQL. The company serves mid-market retail and fintech customers
+across North America.
+
+Leadership:
+- Maya Okonkwo — CEO & Co-founder
+- Raj Patel — Head of Data Science

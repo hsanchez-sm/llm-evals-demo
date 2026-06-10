@@ -1,0 +1,29 @@
+EVALSINC — PRICING & PLANS
+==========================
+
+EvalsInc offers three subscription tiers. Prices are in USD and
+billed per user. Annual billing saves 20% versus monthly.
+
+FREE
+- Price: $0
+- Users: 1
+- Queries: 100 per month
+- Support: community forum
+- API access: no
+
+PRO
+- Price: $49 / user / month (or $470 / user / year)
+- Users: up to 10
+- Queries: 10,000 per month
+- Support: email, next-business-day
+- API access: yes
+
+ENTERPRISE
+- Price: custom (contact sales)
+- Users: unlimited
+- Queries: unlimited
+- Support: dedicated success manager, 24/7, 99.9% uptime SLA
+- API access: yes, with SSO and audit logs
+
+Upgrades take effect immediately and are prorated. Downgrades take
+effect at the start of the next billing cycle.

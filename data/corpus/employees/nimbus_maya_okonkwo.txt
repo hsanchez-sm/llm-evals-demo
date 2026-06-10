@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Maya Okonkwo
+===============================
+
+Name:        Maya Okonkwo
+Company:     Nimbus Analytics, Inc.
+Job title:   CEO & Co-founder
+Department:  Executive
+Email:       maya.okonkwo@nimbusanalytics.io
+Location:    Austin, Texas, USA
+
+Bio:
+Maya co-founded Nimbus Analytics in 2016 after a decade leading
+data teams in fintech. She drives company strategy and investor
+relations, and remains hands-on with product direction.
+
+--- Email signature ---
+Maya Okonkwo
+CEO & Co-founder | Nimbus Analytics
+maya.okonkwo@nimbusanalytics.io
+www.nimbusanalytics.io

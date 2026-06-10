@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Aiko Tanaka
+==============================
+
+Name:        Aiko Tanaka
+Company:     Kestrel Robotics GmbH
+Job title:   Chief Technology Officer & Co-founder
+Department:  Engineering
+Email:       aiko.tanaka@kestrelrobotics.ai
+Location:    Munich, Germany
+
+Bio:
+Aiko co-founded Kestrel Robotics in 2019 and leads all engineering.
+She holds a PhD in autonomous navigation and architected the
+company's AMR fleet-coordination system.
+
+--- Email signature ---
+Aiko Tanaka
+CTO & Co-founder | Kestrel Robotics
+aiko.tanaka@kestrelrobotics.ai
+www.kestrelrobotics.ai

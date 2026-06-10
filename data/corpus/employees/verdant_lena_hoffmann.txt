@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Lena Hoffmann
+================================
+
+Name:        Lena Hoffmann
+Company:     Verdant Foods, LLC
+Job title:   Chief Operating Officer
+Department:  Operations
+Email:       lena.hoffmann@verdantfoods.com
+Location:    Portland, Oregon, USA
+
+Bio:
+Lena oversees manufacturing, logistics, and quality across Verdant
+Foods' three production facilities. She joined in 2014 and led the
+company's B-Corp certification effort.
+
+--- Email signature ---
+Lena Hoffmann
+Chief Operating Officer | Verdant Foods
+lena.hoffmann@verdantfoods.com
+www.verdantfoods.com

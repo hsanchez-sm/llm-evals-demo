@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Daniel Brooks
+================================
+
+Name:        Daniel Brooks
+Company:     Kestrel Robotics GmbH
+Job title:   Lead Robotics Engineer
+Department:  Engineering
+Email:       daniel.brooks@kestrelrobotics.ai
+Location:    Munich, Germany
+
+Bio:
+Daniel leads the robotics engineering squad at Kestrel, focusing on
+sensor fusion and obstacle avoidance. He joined in 2020 from an
+automotive autonomy startup.
+
+--- Email signature ---
+Daniel Brooks
+Lead Robotics Engineer | Kestrel Robotics
+daniel.brooks@kestrelrobotics.ai
+www.kestrelrobotics.ai

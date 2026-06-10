@@ -1,0 +1,8 @@
+# Core (mock backend) needs ONLY the Python standard library — nothing to install.
+# The packages below are OPTIONAL, required only to run against a real model API
+# (i.e. `--backend anthropic` or `--backend openai`). CI runs in mock mode and
+# installs nothing.
+#
+#   pip install -r requirements.txt   # only if you want the real-API backends
+anthropic>=0.39.0
+openai>=1.40.0

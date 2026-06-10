@@ -1,0 +1,30 @@
+EVALSINC API — ERROR REFERENCE
+==============================
+
+The EvalsInc REST API returns standard HTTP status codes.
+
+400 Bad Request
+  The request body is malformed or a required field is missing.
+  Check the JSON payload against the API docs.
+
+401 Unauthorized
+  The API key is missing, invalid, or expired. Generate a new key
+  in Settings > API Keys and pass it as: Authorization: Bearer <key>.
+
+403 Forbidden
+  The key is valid but your plan or role lacks permission for this
+  endpoint (e.g., API access requires a Pro or Enterprise plan).
+
+404 Not Found
+  The resource ID does not exist or was deleted.
+
+429 Too Many Requests
+  You exceeded your plan's rate limit. Back off and retry after the
+  number of seconds in the Retry-After header.
+
+500 Internal Server Error
+  An unexpected error on our side. Retry; if it persists, contact
+  support with the request ID from the response.
+
+503 Service Unavailable
+  Temporary maintenance or overload. Retry with exponential backoff.

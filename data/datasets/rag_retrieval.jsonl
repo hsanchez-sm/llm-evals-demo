@@ -1,0 +1,12 @@
+{"id": "rag_001", "query": "Tell me everything about Nimbus Analytics.", "entity": "nimbus_analytics", "expected_doc_ids": ["comp_nimbus", "emp_nimbus_maya", "emp_nimbus_raj"]}
+{"id": "rag_002", "query": "Who works at Kestrel Robotics?", "entity": "kestrel_robotics", "expected_doc_ids": ["emp_kestrel_aiko", "emp_kestrel_daniel"]}
+{"id": "rag_003", "query": "What is Verdant Foods' annual revenue?", "entity": "verdant_foods", "expected_doc_ids": ["comp_verdant"]}
+{"id": "rag_004", "query": "Who is the COO of Verdant Foods?", "entity": "verdant_foods", "expected_doc_ids": ["emp_verdant_lena"]}
+{"id": "rag_005", "query": "What is the website of Kestrel Robotics?", "entity": "kestrel_robotics", "expected_doc_ids": ["comp_kestrel"]}
+{"id": "rag_006", "query": "What is Raj Patel's email address?", "entity": "nimbus_analytics", "expected_doc_ids": ["emp_nimbus_raj"]}
+{"id": "rag_007", "query": "Tell me about the supply chain manager at Verdant Foods.", "entity": "verdant_foods", "expected_doc_ids": ["emp_verdant_tomas"]}
+{"id": "rag_008", "query": "What does the Pro plan include?", "entity": "evalsinc", "expected_doc_ids": ["prod_pricing"]}
+{"id": "rag_009", "query": "How do I request a refund?", "entity": "evalsinc", "expected_doc_ids": ["prod_refund"]}
+{"id": "rag_010", "query": "What does a 429 error mean?", "entity": "evalsinc", "expected_doc_ids": ["prod_api_errors"]}
+{"id": "rag_011", "query": "How do I enable two-factor authentication?", "entity": "evalsinc", "expected_doc_ids": ["prod_troubleshoot"]}
+{"id": "rag_012", "query": "What is the stock price of Apple Inc.?", "entity": null, "expected_doc_ids": [], "note": "NEGATIVE: out-of-KB entity. Correct behavior is to retrieve nothing relevant / abstain."}

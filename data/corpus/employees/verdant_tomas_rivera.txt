@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Tomás Rivera
+===============================
+
+Name:        Tomás Rivera
+Company:     Verdant Foods, LLC
+Job title:   Supply Chain Manager
+Department:  Supply Chain
+Email:       tomas.rivera@verdantfoods.com
+Location:    Sacramento, California, USA
+
+Bio:
+Tomás manages sourcing and distribution logistics for Verdant
+Foods, coordinating organic ingredient suppliers across the West
+Coast. He joined the company in 2017.
+
+--- Email signature ---
+Tomás Rivera
+Supply Chain Manager | Verdant Foods
+tomas.rivera@verdantfoods.com
+www.verdantfoods.com

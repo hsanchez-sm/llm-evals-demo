@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets — never commit API keys
+.env
+*.key
+
+# Eval run outputs (regenerated on every run)
+reports/last_run.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

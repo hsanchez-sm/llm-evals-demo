@@ -1,0 +1,27 @@
+EVALSINC — TROUBLESHOOTING FAQ
+==============================
+
+How do I reset my password?
+  Go to the login page > "Forgot password". You'll receive a reset
+  link by email, valid for 30 minutes. If it doesn't arrive, check
+  spam and confirm the email matches your account.
+
+How do I generate an API key?
+  Settings > API Keys > "Create key". Copy it immediately — it is
+  shown only once. API access requires a Pro or Enterprise plan.
+
+How do I enable two-factor authentication (2FA)?
+  Settings > Security > "Enable 2FA" and scan the QR code with an
+  authenticator app. Save the backup codes.
+
+My dashboard won't load / is blank.
+  Hard-refresh (Ctrl+Shift+R), clear cache, and disable ad blockers
+  for the app domain. Check status.evalsinc.example for outages.
+
+How do I connect an integration?
+  Settings > Integrations > select the provider > "Connect", then
+  authorize. If the connection drops, reconnect and re-authorize
+  the requested scopes.
+
+How do I add teammates?
+  Settings > Members > "Invite". Seats are limited by your plan.

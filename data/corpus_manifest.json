@@ -1,0 +1,28 @@
+{
+  "description": "Ground-truth manifest for the EvalsInc synthetic corpus. Maps each document to its entity and the agent that owns it. Used by the RAG-retrieval and agent-routing evals.",
+  "entities": {
+    "nimbus_analytics": { "type": "company", "name": "Nimbus Analytics" },
+    "verdant_foods": { "type": "company", "name": "Verdant Foods" },
+    "kestrel_robotics": { "type": "company", "name": "Kestrel Robotics" }
+  },
+  "documents": [
+    { "doc_id": "comp_nimbus",        "path": "data/corpus/companies/nimbus_analytics.txt",      "title": "Nimbus Analytics — Company Profile", "type": "company",  "entity": "nimbus_analytics", "agent": "knowledge_agent" },
+    { "doc_id": "comp_verdant",       "path": "data/corpus/companies/verdant_foods.txt",         "title": "Verdant Foods — Company Profile",    "type": "company",  "entity": "verdant_foods",    "agent": "knowledge_agent" },
+    { "doc_id": "comp_kestrel",       "path": "data/corpus/companies/kestrel_robotics.txt",      "title": "Kestrel Robotics — Company Profile", "type": "company",  "entity": "kestrel_robotics", "agent": "knowledge_agent" },
+    { "doc_id": "emp_nimbus_maya",    "path": "data/corpus/employees/nimbus_maya_okonkwo.txt",   "title": "Maya Okonkwo — CEO, Nimbus",         "type": "employee", "entity": "nimbus_analytics", "agent": "knowledge_agent" },
+    { "doc_id": "emp_nimbus_raj",     "path": "data/corpus/employees/nimbus_raj_patel.txt",      "title": "Raj Patel — Head of DS, Nimbus",     "type": "employee", "entity": "nimbus_analytics", "agent": "knowledge_agent" },
+    { "doc_id": "emp_verdant_lena",   "path": "data/corpus/employees/verdant_lena_hoffmann.txt", "title": "Lena Hoffmann — COO, Verdant",       "type": "employee", "entity": "verdant_foods",    "agent": "knowledge_agent" },
+    { "doc_id": "emp_verdant_tomas",  "path": "data/corpus/employees/verdant_tomas_rivera.txt",  "title": "Tomás Rivera — Supply Chain, Verdant","type": "employee", "entity": "verdant_foods",    "agent": "knowledge_agent" },
+    { "doc_id": "emp_kestrel_aiko",   "path": "data/corpus/employees/kestrel_aiko_tanaka.txt",   "title": "Aiko Tanaka — CTO, Kestrel",         "type": "employee", "entity": "kestrel_robotics", "agent": "knowledge_agent" },
+    { "doc_id": "emp_kestrel_daniel", "path": "data/corpus/employees/kestrel_daniel_brooks.txt", "title": "Daniel Brooks — Lead Eng, Kestrel",  "type": "employee", "entity": "kestrel_robotics", "agent": "knowledge_agent" },
+
+    { "doc_id": "prod_pricing",       "path": "data/corpus/product/pricing_plans.txt",          "title": "EvalsInc — Pricing & Plans",         "type": "product",  "entity": "evalsinc",         "agent": "billing_agent" },
+    { "doc_id": "prod_refund",        "path": "data/corpus/product/refund_policy.txt",          "title": "EvalsInc — Refund Policy",           "type": "product",  "entity": "evalsinc",         "agent": "billing_agent" },
+    { "doc_id": "prod_api_errors",    "path": "data/corpus/product/api_error_reference.txt",    "title": "EvalsInc API — Error Reference",     "type": "product",  "entity": "evalsinc",         "agent": "technical_support_agent" },
+    { "doc_id": "prod_troubleshoot",  "path": "data/corpus/product/troubleshooting_faq.txt",    "title": "EvalsInc — Troubleshooting FAQ",     "type": "product",  "entity": "evalsinc",         "agent": "technical_support_agent" },
+    { "doc_id": "prod_about",         "path": "data/corpus/product/about_evalsinc.txt",         "title": "About the EvalsInc Assistant",       "type": "product",  "entity": "evalsinc",         "agent": "general_agent" }
+  ],
+  "summarization_sources": [
+    { "doc_id": "transcript_q2_planning", "path": "data/corpus/transcripts/q2_planning_meeting.txt", "title": "EvalsInc Q2 Product Planning — Meeting Transcript", "type": "transcript" }
+  ]
+}

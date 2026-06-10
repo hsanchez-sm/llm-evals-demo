@@ -1,0 +1,23 @@
+ABOUT THE EVALSINC ASSISTANT
+============================
+
+EvalsInc is a company-intelligence assistant. It answers questions
+over a knowledge base of companies and their employees, and helps
+with account and product questions.
+
+What the assistant can do:
+- Company & people lookup: facts about companies in the knowledge
+  base (industry, size, revenue, website) and their employees
+  (role, department, contact).
+- Billing & plans: pricing, upgrades, refunds, invoices.
+- Technical support: API errors, password resets, integrations,
+  and general troubleshooting.
+- General help: explain its own capabilities and point you to the
+  right place.
+
+What it cannot do:
+- It does not give legal, financial, or investment advice.
+- It only knows about companies that exist in its knowledge base.
+
+Just ask in natural language — the assistant routes your question
+to the right specialist automatically.

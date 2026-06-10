@@ -1,0 +1,20 @@
+EMPLOYEE PROFILE — Raj Patel
+============================
+
+Name:        Raj Patel
+Company:     Nimbus Analytics, Inc.
+Job title:   Head of Data Science
+Department:  Data Science
+Email:       raj.patel@nimbusanalytics.io
+Location:    Austin, Texas, USA
+
+Bio:
+Raj leads the data science group at Nimbus Analytics, owning the
+forecasting models behind NimbusBoard. He joined in 2018 and built
+the team from three to twenty-two people.
+
+--- Email signature ---
+Raj Patel
+Head of Data Science | Nimbus Analytics
+raj.patel@nimbusanalytics.io
+www.nimbusanalytics.io

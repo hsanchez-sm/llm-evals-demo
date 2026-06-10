@@ -1,0 +1,20 @@
+COMPANY PROFILE — Kestrel Robotics
+==================================
+
+Company name:   Kestrel Robotics GmbH
+Website:        https://www.kestrelrobotics.ai
+Industry:       Industrial Robotics
+Headquarters:   Munich, Germany
+Founded:        2019
+Employees:      85
+Annual revenue: EUR 12 million (FY2024)
+
+About:
+Kestrel Robotics designs autonomous mobile robots (AMRs) for
+warehouse logistics. Its robots navigate cluttered floors to move
+inventory between picking stations, integrating with existing
+warehouse management systems via an open API.
+
+Leadership:
+- Aiko Tanaka — Chief Technology Officer & Co-founder
+- Daniel Brooks — Lead Robotics Engineer
