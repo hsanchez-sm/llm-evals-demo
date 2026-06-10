@@ -27,6 +27,7 @@ def run(assistant, dataset):
         scores.append(score)
         rows.append({
             "id": case["id"], "query": case["query"],
+            "reference": case["reference_answer"],
             "answer": out["answer"], "agent": out["agent"],
             "score": round(score, 3), "passed": score >= PASS_THRESHOLD,
         })

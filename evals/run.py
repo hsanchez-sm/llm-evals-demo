@@ -26,6 +26,12 @@ DATASETS = {
 
 
 def main(argv=None):
+    # Ensure non-ASCII (em dashes, accents) print cleanly on Windows consoles.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
+
     parser = argparse.ArgumentParser(description="Run EvalsInc LLM eval suites.")
     parser.add_argument("--backend", default="mock", choices=["mock", "anthropic", "openai"])
     parser.add_argument("--suite", default="all", choices=["all", *SUITES])
