@@ -76,6 +76,51 @@ precision caps at 0.33 at k=3 — recall@k and MRR are the meaningful retrieval 
 A good eval suite isn't one where everything scores 100% — it's one that **measures
 the right things and exposes where a system fails.**
 
+### How failing cases arise (nothing is rigged)
+
+The failing cases are **not hand-authored to fail** — they *emerge* from running the
+simple mock baseline against the ground truth, under fixed pass/fail criteria. Two
+things are kept separate:
+
+- **Expected result** — hand-labeled ground truth, derived from the corpus facts
+  (revenue, CTO, price, …). Fixed and known.
+- **Obtained result** — whatever the mock SUT produces (rule-based router, TF-IDF
+  retriever, extractive answerer, lexical faithfulness check).
+
+A case **fails** when *obtained ≠ expected* under the suite's pass rule. The SUT
+decides that — not the dataset.
+
+**Two kinds of hard case:**
+- *Deliberately hard probes* authored to stress a scenario — routing **traps**
+  (billing-sounding wording about a knowledge-base company), the retrieval
+  **negative** (out-of-KB query that must abstain), and summarization
+  **faithfulness probes** (pre-written summaries labeled `is_faithful=false`).
+  Whether they pass is still up to the SUT.
+- *Emergent failures* — the lexical baseline simply isn't strong enough. These are
+  the most informative.
+
+**Pass criteria (defined in `evals/report.py`):**
+
+| Suite | A case passes when… |
+|-------|---------------------|
+| Agent routing | predicted agent == expected agent |
+| RAG retrieval | recall@k == 1.0 (all expected docs in top-k); negative case → abstains (top score < 0.15) |
+| Response quality | score ≥ 0.5 (keyword-recall proxy for the rubric) |
+| Summarization | reference → faithful **and** coverage ≥ 0.5; probe → predicted label == labeled |
+
+**Why each baseline failure happens:**
+
+| Case | Why it fails |
+|------|--------------|
+| `rag_008` — *"What does the Pro plan include?"* | TF-IDF ranks `prod_refund` / `prod_api` above `prod_pricing`: "Pro plan" also appears in the refund policy and "include" is generic — lexical overlap is misleading. |
+| `qual_003/004/005/008/009/010` | The extractive answerer returns the doc line with the most query-word overlap, which is often a header rather than the fact. E.g. *"founding year"* matches `Company name: Nimbus Analytics` (shares "Nimbus/Analytics") over `Founded: 2016` (zero overlap — "founding" ≠ "founded"), so "2016" never appears in the answer. |
+| `sum_003` (TL;DR) | The extractive summary covers < 50% of the gold key points. |
+| `sum_004` (faithfulness probe) | The lexical detector misses a **semantic** contradiction (*"Slack shipped this quarter"* reuses words that are present in the source) — exactly the gap an LLM-judge backend closes. |
+
+Run `--backend anthropic|openai` and most quality/summarization failures resolve,
+because a real model answers concisely and judges semantically — the harness then
+quantifies that lift.
+
 ## Datasets (`data/`)
 
 - `corpus/` — 14 documents (3 companies × profile + 2 employees each, plus 5 product
@@ -83,6 +128,8 @@ the right things and exposes where a system fails.**
 - `corpus_manifest.json` — ground truth: each doc → its entity and owning agent.
 - `datasets/*.jsonl` — labeled cases per suite (routing 18, retrieval 12, quality 10,
   summarization 6 incl. faithfulness probes).
+
+See [`docs/DATASETS.md`](docs/DATASETS.md) for every case and its expected result.
 
 ## Project layout
 
